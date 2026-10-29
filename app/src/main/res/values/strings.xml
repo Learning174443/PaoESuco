@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Pão e Suco</string>
+
+    <!-- Menu da Toolbar -->
+    <string name="action_atualizar">Atualizar cardápio</string>
+    <string name="action_sobre">Sobre</string>
+    <string name="msg_sobre">Pão e Suco – informações do RU da FT Unicamp</string>
+
+    <!-- Barra inferior -->
+    <string name="nav_cardapio">Cardápio</string>
+    <string name="nav_calculadora">Calculadora</string>
+    <string name="nav_saldo">Saldo</string>
+    <string name="nav_recarga">Recarga</string>
+
+    <!-- Cardápio -->
+    <string name="url_cardapio">https://sistemas.prefeituralimeira.unicamp.br/RU/view/site/cardapio.php</string>
+    <string name="cardapio_carregando">Carregando cardápio…</string>
+    <string name="erro_cardapio">Não foi possível carregar o cardápio. Verifique sua conexão.</string>
+    <string name="sem_cardapio">Nenhum cardápio disponível no momento.</string>
+
+    <!-- Calculadora -->
+    <string name="hint_cafe">Nº de cafés da manhã</string>
+    <string name="hint_almoco">Nº de almoços/jantares</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="msg_campo_vazio">Declare o número de refeições para continuar</string>
+    <string name="msg_numero_invalido">Número inválido</string>
+
+    <!-- Saldo -->
+    <string name="texto_saldo">Para visualizar seu saldo atual, dirija-se a uma máquina de recarga perto do RU e aproxime seu cartão do leitor da máquina. Ou aperte o botão para ir para o aplicativo “Unicamp Serviços”. Dentro do app, vá até a opção “Saldo do Cartão” e preencha com seu RA e senha da Unicamp para consultar seu saldo.</string>
+    <string name="btn_saldo">Verificar Saldo</string>
+
+    <!-- Recarga -->
+    <string name="texto_recarga">Para fazer a recarga do seu cartão, dirija-se até uma máquina de recarga perto do RU e insira seu cartão. Após isso, faça o pagamento em dinheiro direto na máquina. Ou, para realizar a recarga por PIX, selecione o botão para ir para o aplicativo “Carteirinha”. Dentro do app, vá até a opção “Recarga PIX”, selecione “Nova Recarga”, declare o valor que quer depositar no cartão e realize o pagamento usando o aplicativo do seu banco. Após efetuar o pagamento, aproxime seu cartão do leitor da máquina de recarga para depositar o saldo no cartão.</string>
+    <string name="btn_recarga">Recarga PIX</string>
+</resources>

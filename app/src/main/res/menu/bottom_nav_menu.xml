@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Abas da barra de navegação inferior -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_cardapio"
+        android:icon="@drawable/ic_cardapio"
+        android:title="@string/nav_cardapio" />
+    <item
+        android:id="@+id/nav_calculadora"
+        android:icon="@drawable/ic_calculadora"
+        android:title="@string/nav_calculadora" />
+    <item
+        android:id="@+id/nav_saldo"
+        android:icon="@drawable/ic_saldo"
+        android:title="@string/nav_saldo" />
+    <item
+        android:id="@+id/nav_recarga"
+        android:icon="@drawable/ic_recarga"
+        android:title="@string/nav_recarga" />
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- permissão para acessar a internet (igual ao exemplo Feed) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Android 11+ só "enxerga" esses apps instalados se forem declarados aqui -->
+    <queries>
+        <package android:name="br.unicamp.ccuec.unicampservicos" />
+        <package android:name="com.inovatecnologia.carteirinha" />
+    </queries>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PaoESuco">
+
+        <!-- Tela inicial: Cardápio -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PaoESuco"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Demais telas (registradas como a Calculadora do exemplo) -->
+        <activity
+            android:name=".CalculadoraActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PaoESuco"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SaldoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PaoESuco" />
+        <activity
+            android:name=".RecargaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PaoESuco" />
+    </application>
+
+</manifest>
