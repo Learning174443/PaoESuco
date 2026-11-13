@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- permissão para acessar a internet (igual ao exemplo Feed) -->
+    <!-- permissão para acessar a internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Android 11+ só "enxerga" esses apps instalados se forem declarados aqui -->
@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Demais telas (registradas como a Calculadora do exemplo) -->
+        <!-- Demais telas -->
         <activity
             android:name=".CalculadoraActivity"
             android:exported="false"

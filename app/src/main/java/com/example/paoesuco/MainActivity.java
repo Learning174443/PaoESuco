@@ -36,7 +36,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-// Tela Cardápio (tela inicial). Baseada no exemplo Feed_ref2026.
+// Tela Cardápio (tela inicial).
 public class MainActivity extends AppCompatActivity {
 
     //1 variáveis das Views da tela
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar progress;
     private TextView cardapioTxt;
 
-    //1.1 variável String que recebe o conteúdo do site (igual ao exemplo Feed)
+    //1.1 variável String que recebe o conteúdo do site
     private String mFileContents;
 
     //1.2 lista com as datas disponíveis no site, no formato AAAA-MM-DD
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         executeTask(getString(R.string.url_cardapio), null);
     }
 
-    //7 método de download (copiado do exemplo Feed). Única mudança: se tiver data, envia por POST.
+    //7 método de download: baixa a página do site (se tiver data, envia por POST)
     private String downloadXMLFile(String theUrl, String data) {
         // precisamos usar um try pois as operações de abertura de conexão e leitura do stream de dados podem lançar exeções de IO.
         try {
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             //abre a conexão
             HttpURLConnection myconnection = (HttpURLConnection) myUrl.openConnection();
 
-            //NOVO: se tiver data, envia "data=AAAA-MM-DD" por POST (igual ao formulário do site)
+            //se tiver data, envia "data=AAAA-MM-DD" por POST (igual ao formulário do site)
             if (data != null) {
                 myconnection.setRequestMethod("POST");
                 myconnection.setDoOutput(true);
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
         return null;
     }
 
-    //8 executa o download numa thread paralela (copiado do exemplo Feed)
+    //8 executa o download numa thread paralela
     private void executeTask(String url, String data) {
         progress.setVisibility(View.VISIBLE);
 
@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     mFileContents = future.get();
-                    //NOVO: as Views só podem ser alteradas na thread da tela, por isso runOnUiThread
+                    //as Views só podem ser alteradas na thread da tela, por isso runOnUiThread
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-// Métodos simples, sem nada do Android, para poderem ser testados no RuUtilsTest.
+// Métodos simples, sem nada do Android, usados pelas telas do app.
 public class RuUtils {
 
     //1 valores das refeições no RU (em reais)

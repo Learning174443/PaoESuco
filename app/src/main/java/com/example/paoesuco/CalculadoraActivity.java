@@ -18,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.paoesuco.databinding.ActivityCalculadoraBinding;
 
-// Tela Calculadora. Baseada no exemplo calculadora_ref2026.
+// Tela Calculadora.
 public class CalculadoraActivity extends AppCompatActivity {
 
     //1 criando as variáveis Java associadas aos elementos XML do layout
@@ -73,7 +73,7 @@ public class CalculadoraActivity extends AppCompatActivity {
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //5 verifica se os campos não estão vazios (igual ao exemplo)
+                //5 verifica se os campos não estão vazios
                 if (cafe.getText().length() == 0 || almoco.getText().length() == 0) {
                     //6 se algum não estiver preenchido mostra a mensagem pedindo o preenchimento
                     Toast.makeText(CalculadoraActivity.this, R.string.msg_campo_vazio,
